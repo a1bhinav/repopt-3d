@@ -1,0 +1,29 @@
+# Data & checkpoints — never commit these
+data/
+datasets/
+*.pth
+*.ckpt
+*.pt
+*.npy
+*.npz
+*.ply
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Logs & experiment outputs
+wandb/
+runs/
+logs/
+outputs/
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
