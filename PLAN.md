@@ -23,7 +23,7 @@ ScanNet has no separate val-only download; the entire 234.8 GB must be fetched. 
 ## Phases
 
 ### Phase 0 — Environment
-1. Create conda env `openscene` (Python 3.8).
+1. Create or use conda env `scene` (Python 3.8).
 2. Install PyTorch 1.7.1+cu110.
 3. Install MinkowskiEngine (required by the dataloader even in fusion mode — `SparseTensor` is imported unconditionally).
 4. `pip install -r third_party/openscene/requirements.txt`.
@@ -101,3 +101,7 @@ Copy the final mIoU line from the log and record it here as the fusion-mode Matt
 1. **MinkowskiEngine is still required** even in fusion mode — the dataloader imports `SparseTensor` unconditionally. The environment must have it built.
 2. **`test_repeats: 5`** in the config means evaluation runs 5 times with different random voxelization seeds and averages. Expected wall-clock time is proportionally higher than a single pass.
 3. **`mark_no_feature_to_unknown: True`** is set — points with no 2D feature coverage are assigned the `unknown` label rather than the nearest-neighbor class. This matches the published eval protocol.
+
+## Dependency Check
+
+All OpenScene deps OK
