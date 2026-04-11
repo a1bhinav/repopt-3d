@@ -4,15 +4,15 @@ Each team member fills in their row after replicating the repo and creating thei
 
 ## Status table
 
-| Name     | Verification output | Torch version | CUDA available | Date | Notes |
-|----------|--------------------|--------------:|:--------------:|------|-------|
-| Abhinav  |                    |               |                |      |       |
-| Soorya   |                    |               |                |      |       |
-| Khalit   |                    |               |                |      |       |
-| Chinmai  |                    |               |                |      |       |
-| Tanvi    |                    |               |                |      |       |
-| Yusuf    |                    |               |                |      |       |
-| Seelan   |                    |               |                |      |       |
+| Name     | Verification output    | Torch version | CUDA available | Date         | Notes                                   |
+|----------|------------------------|--------------:|:--------------:|--------------|-----------------------------------------|   
+| Abhinav  |  All OpenScene deps OK | 2.4.1+cu124   |    True        |  2026-04-11  |  RunPod RTX 4090 pod, EU-RO-1, conda env name `repopt`.|
+| Soorya   |                        |               |                |              |                                         |
+| Khalit   |                        |               |                |              |                                         |
+| Chinmai  |                        |               |                |              |                                         |
+| Tanvi    |                        |               |                |              |                                         |
+| Yusuf    |                        |               |                |              |                                         |
+| Seelan   |                        |               |                |              |                                         |
 
 ## How to fill your row
 
@@ -28,6 +28,6 @@ Each team member fills in their row after replicating the repo and creating thei
 
 ## Convention
 
-- `main` is for reviewed, working code only. Don't push to main directly — open a PR instead. (This isn't technically enforced yet, just a team norm. Please respect it.)
+- `main` is for reviewed, working code only. Don't push to main directly — open a PR instead. {This isn't technically enforced yet, just a team norm. Please respect it:) }
 - Branch naming: `setup/<your-firstname-lowercase>` for this task. We'll figure out more conventions later.
 - One PR per task. Don't bundle unrelated changes.
