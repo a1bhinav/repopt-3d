@@ -101,3 +101,4 @@ Copy the final mIoU line from the log and record it here as the fusion-mode Matt
 1. **MinkowskiEngine is still required** even in fusion mode — the dataloader imports `SparseTensor` unconditionally. The environment must have it built.
 2. **`test_repeats: 5`** in the config means evaluation runs 5 times with different random voxelization seeds and averages. Expected wall-clock time is proportionally higher than a single pass.
 3. **`mark_no_feature_to_unknown: True`** is set — points with no 2D feature coverage are assigned the `unknown` label rather than the nearest-neighbor class. This matches the published eval protocol.
+All OpenScene deps OK
