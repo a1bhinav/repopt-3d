@@ -8,7 +8,7 @@ Each team member fills in their row after replicating the repo and creating thei
 |----------|------------------------|--------------:|:--------------:|--------------|-----------------------------------------|   
 | Abhinav  |  All OpenScene deps OK | 2.4.1+cu124   |    True        |  2026-04-11  |  RunPod RTX 4090 pod, EU-RO-1, conda env name `repopt`.|
 | Soorya   |                        |               |                |              |                                         |
-| Khalit   |                        |               |                |              |                                         |
+| Khalit   | All OpenScene deps OK  | 2.4.1+cu124   |    True        | 2026-04-18   | Google Colab Pro, NVIDIA L4. Patched OpenScene for Python 3.12 compatibility and made fusion eval Minkowski-free (fork branch: https://github.com/St1p42/openscene/tree/dev-khalit-openscene). |
 | Chinmai  |                        |               |                |              |                                         |
 | Tanvi    |                        |               |                |              |                                         |
 | Yusuf    |                        |               |                |              |                                         |
