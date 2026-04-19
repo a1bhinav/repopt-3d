@@ -2,6 +2,10 @@
 
 Lightweight optimization-guided adaptation of pretrained 2D features for 3D scene understanding.
 
+## Team Setup
+
+New to the project? Follow [SETUP.md](SETUP.md) to replicate the repo and verify your environment.
+
 ## Status
 Reproducing OpenScene baseline — fusion mode, Matterport3D 21-class test set.
 
