@@ -30,3 +30,4 @@ outputs/
 
 # Cursor project rules
 .cursor/
+./third_party/openscene/.claude/
