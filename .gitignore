@@ -1,6 +1,6 @@
 # Data & checkpoints — never commit these
-data/
-datasets/
+/data/
+/datasets/
 *.pth
 *.ckpt
 *.pt
@@ -12,15 +12,15 @@ datasets/
 __pycache__/
 *.pyc
 .venv/
-venv/
+/venv/
 *.egg-info/
 .ipynb_checkpoints/
 
 # Logs & experiment outputs
-wandb/
-runs/
-logs/
-outputs/
+/wandb/
+/runs/
+/logs/
+/outputs/
 *.log
 
 # OS / editor
