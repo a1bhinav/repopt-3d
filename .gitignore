@@ -22,6 +22,7 @@ runs/
 logs/
 outputs/
 *.log
+out/
 
 # OS / editor
 .DS_Store

@@ -32,7 +32,13 @@ sh run/eval.sh out/matterport_openseg \
 
 See [PLAN.md](PLAN.md) for the full phased plan.
 
+## Experiments (Matterport adapt split)
+1. Build adapt splits: `sbatch split_dataset.sh` (or `python scripts/split_dataset.py`) — symlinks `adapt-train` / `adapt-val` / `adapt-test` from `test/*.pth`.
+2. Baseline mIoU on `adapt-test`: `sbatch run_eval_baseline.sh` or `python scripts/eval_baseline.py`.
+3. Baseline on **full** official test split: `sbatch run_eval_full_test.sh` or `python scripts/eval_full_test.py` (`$MATTERPORT_3D_ROOT` / `$DATA_ROOT/matterport_3d`).
+4. HPO + final `adapt-test` for CE-only: `sbatch run_hpo_ce.sh`
+5. HPO + final `adapt-test` for CE + H1: `sbatch run_hpo_ce_h1.sh`
+
 ## Structure
-- `third_party/openscene/` — upstream OpenScene repo (submodule)
-- `src/` — our adapter, losses, and training code (TBD)
-- `configs/` — our experiment configs (TBD)
+- `scripts/` — `split_dataset.py`, `eval_baseline.py`, `eval_full_test.py`, `hpo_fusion.py`
+- `third_party/openscene/` — OpenScene submodule (includes `run/train_fusion_h1.py`)
