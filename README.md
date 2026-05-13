@@ -33,6 +33,6 @@ sh run/eval.sh out/matterport_openseg \
 See [PLAN.md](PLAN.md) for the full phased plan.
 
 ## Structure
-- `third_party/openscene/` — upstream OpenScene repo (submodule)
-- `src/` — our adapter, losses, and training code (TBD)
-- `configs/` — our experiment configs (TBD)
+- `third_party/openscene/` — upstream OpenScene repo (submodule) with Matterport adapter training (`run/train_adapter.py`) and per-hypothesis YAMLs (`config/matterport/adapter_baseline.yaml`, `adapter_h1.yaml`, `adapter_h2.yaml`, `adapter_h3.yaml`, …).
+- `src/` — standalone supervised-adapter + trust-region utilities from the h3 branch (unit tests under `tests/`).
+- `configs/` — reserved for future top-level experiment configs (optional).
